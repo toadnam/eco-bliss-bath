@@ -11,30 +11,75 @@
   <br><br><br>
 </p>
 
-# Prérequis
-Pour démarrer cet applicatif web vous devez avoir les outils suivants:
+## Prérequis
+Pour démarrer l'application, vous devez avoir :
 - Docker
 - NodeJs
+- NPM
 
-# Installation et démarrage
-Clonez le projet pour le récupérer
+## Installation et démarrage
+
+### Clonez le projet pour le récupérer
 ``` 
 git clone https://github.com/OpenClassrooms-Student-Center/Eco-Bliss-Bath-V2.git
 cd Eco-Bliss-Bath-V2
 ```
-Pour démarrer l'API avec ça base de données.
+### Démarrer l’API et la base de données
 ```
 docker compose up -d
 ```
-# Pour démarrer le frontend de l'applicatif
+### Démarrer le frontend
 Rendez-vous dans le dossier frontend
 ```
 cd ./frontend
 ```
 Installez les dépendances du projet
 ```
-npm i
-ou
-npm install (si vous préférez)
+npm install
 ```
+Démarrer le projet
+```
+npm start
+```
+L’application est alors accessible à l’adresse :
+```
+http://localhost:4200
+```
+## Tests automatisés
+Les tests automatisés sont réalisés avec **Cypress**.
+
+### Lancer les tests
+Mode interactif
+```
+npx cypress open
+```
+Mode headless
+```
+npx cypress run
+```
+
+### Structure des tests
+Les tests sont organisés comme ceci :
+
+api/ : tests d’API (orders, products, reviews)
+
+functional/ : tests fonctionnels (connexion utilisateur)
+
+smoke/ : smoke tests (chargement de la page d’accueil)
+
+### Résultats des tests
+Les résultats des tests sont visibles :
+
+directement dans l’interface Cypress (mode open)
+ou
+dans la sortie console (mode run)
+
+Les anomalies identifiées sont détaillées dans le **bilan de campagne de tests**.
+
+## Technologies utilisées
+- Cypress
+- Docker
+- Symfony (API)
+- Angular (Frontend)
+- MariaDB
 
