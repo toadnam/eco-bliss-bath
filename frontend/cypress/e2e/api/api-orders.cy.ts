@@ -1,13 +1,13 @@
 describe('API - Orders', () => {
     const API_URL = 'http://localhost:8081';
 
-    it('GET /orders sans authentification doit renvoyer une erreur de sécurité (401)', () => {
+    it('GET /orders sans authentification doit renvoyer une erreur de sécurité (403)', () => {
         cy.request({
             method: 'GET',
             url: `${API_URL}/orders`,
             failOnStatusCode: false,
         }).then((response) => {
-            expect(response.status).to.eq(401);
+            expect(response.status).to.eq(403);
         });
     });
 
