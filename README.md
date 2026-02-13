@@ -1,6 +1,6 @@
 <div align="center">
 
-# OpenClassrooms - Eco-Bliss-Bath
+# Eco-Bliss-Bath
 </div>
 
 <p align="center">
@@ -10,6 +10,12 @@
     <img src="https://img.shields.io/badge/docker--build-passing-brightgreen">
   <br><br><br>
 </p>
+
+## Présentation du projet
+
+Ce projet s’inscrit dans le cadre d’une mission de test logiciel pour une application e-commerce.
+
+L’objectif est d’analyser la qualité de l’application, concevoir une stratégie de test, exécuter une campagne de tests et mettre en place des scénarios automatisés pertinents (API et parcours critique).
 
 ## Prérequis
 Pour démarrer l'application, vous devez avoir :
